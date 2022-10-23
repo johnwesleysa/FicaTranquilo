@@ -4,10 +4,10 @@
     "slug": "FicaTranquilo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
