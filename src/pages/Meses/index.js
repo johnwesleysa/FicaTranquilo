@@ -1,30 +1,21 @@
 import react from 'react';
-import {View, Text, StyleSheet, SafeAreaView, FlatList} from 'react-native';
-
+import {View, Text, StyleSheet, SafeAreaView, StatusBar} from 'react-native';
+import MesesModal from '../../component/MesesModal';
 export default function Meses () {
+
+    
 
     return (
         <SafeAreaView  style={style.container}>
-            <View style={style.boxtitle}>
-                <Text style={style.title}>Selecione o mês</Text>
-                
-            </View>
-        
+                <StatusBar backgroundColor={'#d0e4ae'}/>
+            <MesesModal/>
         </SafeAreaView>
     )
 }
 
 const style = StyleSheet.create ({
     container: {
+        backgroundColor: '#d0e4ae',
         flex: 1,
     },
-    boxtitle: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 60,
-    },
-    title: {
-        fontSize: 25,
-        fontWeight: 'bold'
-    }
 })

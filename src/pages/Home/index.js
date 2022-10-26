@@ -1,12 +1,8 @@
 import React from 'react';
 import {View, Text, StyleSheet, SafeAreaView, Image} from 'react-native';
 import * as Font from 'expo-font';
-import {HindSiliguri_400Regular} from '@expo-google-fonts/hind-siliguri'
-import {HomemadeApple_400Regular  } from '@expo-google-fonts/homemade-apple'
 
 let customFonts = {
-  'hind-siliguri':  HindSiliguri_400Regular,
-  'homemade-apple': HomemadeApple_400Regular,
   'Louis-George-Cafe': require('../fonts/Louis-George-Cafe.ttf')
 };
 
@@ -24,7 +20,6 @@ export default class Home extends React.Component {
         this._loadFontsAsync();
       }
     
-      re
     render () {
         if (!this.state.fontsLoaded) {
             return null;
@@ -41,7 +36,7 @@ export default class Home extends React.Component {
             </View>
             <View style={style.box}>
                 <Text style={style.textbox}>
-                    O apliticativo Fica Tranquilo tem como objetivo mostrar o que cada mês da saúde representa através de suas cores. Para verificar os meses, clique do meio, que se encontra abaixo.
+                    Selecione o botão do meio, que se encontra abaixo, para selecionar o mês desejado.
                 </Text>
             </View>
         </SafeAreaView>
@@ -80,7 +75,7 @@ const style = StyleSheet.create ({
     },
     box: {
         width: 350,
-        top: 470,
+        top: 490,
         left: 20,
         right: 20,
         position: 'absolute',
@@ -92,7 +87,7 @@ const style = StyleSheet.create ({
     },
     textbox: {
         fontFamily: 'Louis-George-Cafe',
-        fontSize: 30,
+        fontSize: 25,
         color: '#273117',
         padding: 10,
         textAlign: 'justify',
