@@ -49,10 +49,10 @@ function Estrutura () {
             <View style={style.containerJaneiro}>
                 <StatusBar backgroundColor={'white'}/>
                     <Text style={style.textTitleJAN}>
-                        Janeiro
+                        Agosto
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
+                    O Agosto Dourado é o mês de informação sobre o aleitamento materno, que, inclusive, tem os dias entre 01 a 07 de agosto como a Semana Mundial da Amamentação. 
                     </Text>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>

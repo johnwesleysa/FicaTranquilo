@@ -49,10 +49,10 @@ function Estrutura () {
             <View style={style.containerJaneiro}>
                 <StatusBar backgroundColor={'white'}/>
                     <Text style={style.textTitleJAN}>
-                        Janeiro
+                        Dezembro
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
+                    O mês de dezembro também tem mais de uma cor, o vermelho e o laranja. O Dezembro Vermelho ressalta a importância da prevenção contra a AIDS, e o Dezembro Laranja traz o debate sobre o combate ao câncer de pele.
                     </Text>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>

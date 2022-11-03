@@ -49,10 +49,10 @@ function Estrutura () {
             <View style={style.containerJaneiro}>
                 <StatusBar backgroundColor={'white'}/>
                     <Text style={style.textTitleJAN}>
-                        Janeiro
+                        Junho
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
+                    Vermelho é a cor comemorativa do mês de junho sobre a importância da doação de sangue, que tem a data 14.06 como o Dia Mundial do Doador de Sangue. E o Junho Laranja é voltado para a conscientização sobre a anemia e leucemia.   
                     </Text>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>

@@ -49,10 +49,10 @@ function Estrutura () {
             <View style={style.containerJaneiro}>
                 <StatusBar backgroundColor={'white'}/>
                     <Text style={style.textTitleJAN}>
-                        Janeiro
+                        Setembro
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
+                    Verde é a cor do mês de setembro para a conscientização sobre a doação de órgãos e prevenção ao câncer de intestino. Neste mês, a data 27 de setembro é o Dia Nacional de Doação de Órgãos e Tecidos. Outra cor para o mês de setembro é o amarelo, que tem como objetivo a prevenção ao suicídio. Setembro também recebe a cor vermelha para a conscientização sobre a prevenção das doenças cardiovasculares.  
                     </Text>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>
