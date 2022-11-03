@@ -36,7 +36,7 @@ export default class Home extends React.Component {
             </View>
             <View style={style.box}>
                 <Text style={style.textbox}>
-                    Selecione o botão do meio, que se encontra abaixo, para selecionar o mês desejado.
+                    Selecionando o botão laranja você encontrará informações para cada mês desejado. Boa navegação!
                 </Text>
             </View>
         </SafeAreaView>

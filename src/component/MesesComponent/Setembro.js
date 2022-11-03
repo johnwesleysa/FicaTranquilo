@@ -61,7 +61,7 @@ function Estrutura () {
 
         </Modal>
         <TouchableOpacity onPress={() => setJaneiro(true)}>
-            <ImageBackground style={style.buttonJAN} borderRadius={15} source={require('../../pages/img/janeiro.png')}>
+            <ImageBackground style={style.buttonJAN} source={require('../../pages/img/Setembro.png')}>
             </ImageBackground>
         </TouchableOpacity>
     </View>

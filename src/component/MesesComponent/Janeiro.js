@@ -1,5 +1,5 @@
 import react, {useState} from 'react';
-import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, ImageBackground, Image} from 'react-native';
 import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
@@ -52,16 +52,21 @@ function Estrutura () {
                         Janeiro
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mentaaae.   
+                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
                     </Text>
+                    <Image style={style.imgJAN} source={require('../../pages/img/SAUDE_MENTAL_JAN.png')}/>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>
                 <AntDesign name="arrowleft" size={40} color="black" />
             </TouchableOpacity>
 
+                
+            
+
         </Modal>
+        <Image style={style.img} source={require('../../pages/img/Laco jan.png')}/>
         <TouchableOpacity onPress={() => setJaneiro(true)} style={{borderRadius:15,}}>
-            <ImageBackground style={style.buttonJAN} borderRadius={15} source={require('../../pages/img/janeiro.png')}>
+            <ImageBackground style={style.buttonJAN} source={require('../../pages/img/janeiro.png')}>
             </ImageBackground>
         </TouchableOpacity>
     </View>
@@ -91,6 +96,12 @@ const style = StyleSheet.create ({
         elevation: 80,
         shadowColor: 'black'
     },
+    imgJAN: {
+        marginTop: 45,
+        marginLeft: 20,
+        marginRight: 20,
+        
+    },
     textTitleJAN: {
         marginTop: 45, 
         fontFamily: 'Louis', 
@@ -103,5 +114,9 @@ const style = StyleSheet.create ({
         textAlign: 'justify',
         fontFamily: 'Louis',
         fontSize: 25,
+    }, img : {
+        position: 'absolute',
+        width: 100, height: 100,
+        
     }
 })

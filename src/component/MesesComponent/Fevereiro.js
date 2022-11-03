@@ -1,5 +1,5 @@
 import react, {useState} from 'react';
-import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, Image, ImageBackground} from 'react-native';
 import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
@@ -47,13 +47,14 @@ function Estrutura () {
         onRequestClose={() => setJaneiro(false)}
         >
             <View style={style.containerJaneiro}>
-                <StatusBar backgroundColor={'white'}/>
+                <StatusBar backgroundColor={'#d4b4ed'}/>
                     <Text style={style.textTitleJAN}>
-                        Janeiro
+                        Fevereiro
                     </Text>
                     <Text style={style.textBodyJan}>
-                    Janeiro Branco é um alerta sobre a saúde mental. A campanha visa demonstrar a importância que cuidar da saúde não significa apenas cuidar da saúde do corpo. Cuidar da mente também é fundamental para o total bem-estar e equilíbrio entre corpo e mente.   
+                    Fevereiro Roxo é o mês de conscientização sobre as doenças: lúpus, fibromialgia e mal de alzheimer. O Fevereiro Laranja, por sua vez, conscientiza sobre a leucemia. 
                     </Text>
+                    <Image style={style.imgFEV} source={require('../../pages/img/FEV_ROXO.png')}/>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>
                 <AntDesign name="arrowleft" size={40} color="black" />
@@ -61,7 +62,7 @@ function Estrutura () {
 
         </Modal>
         <TouchableOpacity onPress={() => setJaneiro(true)}>
-            <ImageBackground style={style.buttonJAN} borderRadius={15} source={require('../../pages/img/janeiro.png')}>
+            <ImageBackground style={style.buttonJAN} source={require('../../pages/img/Fevereiro.png')}>
             </ImageBackground>
         </TouchableOpacity>
     </View>
@@ -72,7 +73,7 @@ function Estrutura () {
 const style = StyleSheet.create ({
     containerJaneiro: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#d4b4ed',
         alignItems: 'center',
         zIndex: 20,
         
@@ -90,6 +91,11 @@ const style = StyleSheet.create ({
         borderRadius: 15,
         elevation: 80,
         shadowColor: 'black'  
+    },
+    imgFEV: {
+        marginTop: 45,
+        marginLeft: 20,
+        marginRight: 20,
     },
     textTitleJAN: {
         marginTop: 45, 
