@@ -96,7 +96,7 @@ function MesesM () {
 
 const style = StyleSheet.create ({
     container:{
-        backgroundColor: '#d0e4ae',
+        backgroundColor: '#62a6ed',
         flex: 1,
         height: 300,
         justifyContent: 'center',

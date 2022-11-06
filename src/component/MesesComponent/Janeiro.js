@@ -4,7 +4,11 @@ import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
 let customFonts = {
-  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf')
+  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf'),
+  'Montserrat': require('../../pages/fonts/Montserrat-Black.otf'),
+  'Montserrat-Bold': require('../../pages/fonts/Montserrat-Bold.otf'),
+  'Montserrat-Medium': require('../../pages/fonts/Montserrat-Medium.otf'),
+  'Numberlin': require('../../pages/fonts/Numberlin.ttf'),
 };
 
 export default class Janeiro extends react.Component {
@@ -64,7 +68,7 @@ function Estrutura () {
             
 
         </Modal>
-        <Image style={style.img} source={require('../../pages/img/Laco jan.png')}/>
+        
         <TouchableOpacity onPress={() => setJaneiro(true)} style={{borderRadius:15,}}>
             <ImageBackground style={style.buttonJAN} source={require('../../pages/img/janeiro.png')}>
             </ImageBackground>
@@ -79,6 +83,7 @@ const style = StyleSheet.create ({
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
+        justifyContent: 'center',
         zIndex: 20,
         
     },
@@ -97,22 +102,19 @@ const style = StyleSheet.create ({
         shadowColor: 'black'
     },
     imgJAN: {
-        marginTop: 45,
-        marginLeft: 20,
-        marginRight: 20,
+        
         
     },
     textTitleJAN: {
-        marginTop: 45, 
-        fontFamily: 'Louis', 
-        fontSize: 30,
+        fontFamily: 'Numberlin', 
+        fontSize: 70,
     },
     textBodyJan: {
-        marginTop: 45,
+        marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
         textAlign: 'justify',
-        fontFamily: 'Louis',
+        fontFamily: 'Montserrat-Medium',
         fontSize: 25,
     }, img : {
         position: 'absolute',

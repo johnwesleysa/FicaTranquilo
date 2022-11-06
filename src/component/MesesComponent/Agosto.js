@@ -1,10 +1,14 @@
 import react, {useState} from 'react';
-import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Modal, TouchableOpacity, Image, StatusBar, ImageBackground} from 'react-native';
 import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
 let customFonts = {
-  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf')
+    'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf'),
+    'Montserrat': require('../../pages/fonts/Montserrat-Black.otf'),
+    'Montserrat-Bold': require('../../pages/fonts/Montserrat-Bold.otf'),
+    'Montserrat-Medium': require('../../pages/fonts/Montserrat-Medium.otf'),
+    'Numberlin': require('../../pages/fonts/Numberlin.ttf'),
 };
 
 export default class Agosto extends react.Component {
@@ -47,13 +51,14 @@ function Estrutura () {
         onRequestClose={() => setJaneiro(false)}
         >
             <View style={style.containerJaneiro}>
-                <StatusBar backgroundColor={'white'}/>
+                <StatusBar backgroundColor={'#edcb62'}/>
                     <Text style={style.textTitleJAN}>
                         Agosto
                     </Text>
                     <Text style={style.textBodyJan}>
                     O Agosto Dourado é o mês de informação sobre o aleitamento materno, que, inclusive, tem os dias entre 01 a 07 de agosto como a Semana Mundial da Amamentação. 
                     </Text>
+                    <Image style={{marginTop: 20}}source={require('../../pages/img/AGOSTO_AMAMENTAÇÃO.png')}/>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>
                 <AntDesign name="arrowleft" size={40} color="black" />
@@ -72,8 +77,9 @@ function Estrutura () {
 const style = StyleSheet.create ({
     containerJaneiro: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#edcb62',
         alignItems: 'center',
+        justifyContent: 'center',
         zIndex: 20,
         
     },
@@ -92,16 +98,15 @@ const style = StyleSheet.create ({
         shadowColor: 'black'
     },
     textTitleJAN: {
-        marginTop: 45, 
-        fontFamily: 'Louis', 
-        fontSize: 30,
+        fontFamily: 'Numberlin', 
+        fontSize: 70,
     },
     textBodyJan: {
-        marginTop: 45,
+        marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
         textAlign: 'justify',
-        fontFamily: 'Louis',
+        fontFamily: 'Montserrat-Medium',
         fontSize: 25,
     }
 })

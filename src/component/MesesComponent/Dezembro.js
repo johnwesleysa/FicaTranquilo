@@ -1,10 +1,14 @@
 import react, {useState} from 'react';
-import {View, Text, StyleSheet, Modal, TouchableOpacity, StatusBar, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Modal, TouchableOpacity, Image, StatusBar, ImageBackground} from 'react-native';
 import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
 let customFonts = {
-  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf')
+    'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf'),
+    'Montserrat': require('../../pages/fonts/Montserrat-Black.otf'),
+    'Montserrat-Bold': require('../../pages/fonts/Montserrat-Bold.otf'),
+    'Montserrat-Medium': require('../../pages/fonts/Montserrat-Medium.otf'),
+    'Numberlin': require('../../pages/fonts/Numberlin.ttf'),
 };
 
 export default class Dezembro extends react.Component {
@@ -47,13 +51,14 @@ function Estrutura () {
         onRequestClose={() => setJaneiro(false)}
         >
             <View style={style.containerJaneiro}>
-                <StatusBar backgroundColor={'white'}/>
+                <StatusBar backgroundColor={'#f0923f'}/>
                     <Text style={style.textTitleJAN}>
                         Dezembro
                     </Text>
                     <Text style={style.textBodyJan}>
                     O mês de dezembro também tem mais de uma cor, o vermelho e o laranja. O Dezembro Vermelho ressalta a importância da prevenção contra a AIDS, e o Dezembro Laranja traz o debate sobre o combate ao câncer de pele.
                     </Text>
+                    <Image style={{marginTop: 20}}source={require('../../pages/img/DEZEMBRO_LARAN.png')}/>
             </View>
             <TouchableOpacity onPress={() => setJaneiro(false)} style={style.back}>
                 <AntDesign name="arrowleft" size={40} color="black" />
@@ -72,8 +77,9 @@ function Estrutura () {
 const style = StyleSheet.create ({
     containerJaneiro: {
         flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#f0923f',
         alignItems: 'center',
+        justifyContent: 'center',
         zIndex: 20,
         
     },
@@ -92,16 +98,15 @@ const style = StyleSheet.create ({
         shadowColor: 'black'
     },
     textTitleJAN: {
-        marginTop: 45, 
-        fontFamily: 'Louis', 
-        fontSize: 30,
+        fontFamily: 'Numberlin', 
+        fontSize: 70,
     },
     textBodyJan: {
-        marginTop: 45,
+        marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
         textAlign: 'justify',
-        fontFamily: 'Louis',
+        fontFamily: 'Montserrat-Medium',
         fontSize: 25,
     }
 })

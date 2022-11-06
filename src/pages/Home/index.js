@@ -1,9 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet, SafeAreaView, Image} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView, Image, StatusBar} from 'react-native';
 import * as Font from 'expo-font';
 
 let customFonts = {
-  'Louis-George-Cafe': require('../fonts/Louis-George-Cafe.ttf')
+  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf'),
+    'Montserrat': require('../../pages/fonts/Montserrat-Black.otf'),
+    'Montserrat-Bold': require('../../pages/fonts/Montserrat-Bold.otf'),
+    'Montserrat-Medium': require('../../pages/fonts/Montserrat-Medium.otf'),
+    'Numberlin': require('../../pages/fonts/Numberlin.ttf'),
 };
 
 export default class Home extends React.Component {
@@ -27,6 +31,7 @@ export default class Home extends React.Component {
     return (
      
         <SafeAreaView style={style.container}>
+            <StatusBar backgroundColor='#62a6ed'/>
             <Image style={style.image}
             source={require('../img/homepage.png')}
             />
@@ -46,7 +51,7 @@ export default class Home extends React.Component {
 
 const style = StyleSheet.create ({
     container: {
-        backgroundColor: '#d0e4ae',
+        backgroundColor: '#62a6ed',
         flex: 1,
     },
     image: {
@@ -64,31 +69,32 @@ const style = StyleSheet.create ({
     },
     text: {
         fontSize: 55,
-        color: '#273117',
+        color: 'black',
         fontFamily: 'Louis-George-Cafe'
     },
     text2: {
         marginLeft: 30,
         fontSize: 55,
-        color: '#273117',
+        color: 'black',
         fontFamily: 'Louis-George-Cafe'
     },
     box: {
         width: 350,
-        top: 490,
+        top: 450,
         left: 20,
         right: 20,
         position: 'absolute',
-        backgroundColor: '#d0e4ae',
+        backgroundColor: '#62a6ed',
         justifyContent: 'center',
         alignItems: 'center',
         elevation: 10,
-        shadowColor: 'black'
+        shadowColor: 'black',
+        borderRadius: 15
     },
     textbox: {
-        fontFamily: 'Louis-George-Cafe',
+        fontFamily: 'Montserrat-Medium',
         fontSize: 25,
-        color: '#273117',
+        color: 'black',
         padding: 10,
         textAlign: 'justify',
     },

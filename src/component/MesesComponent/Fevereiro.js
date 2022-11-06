@@ -4,7 +4,12 @@ import {AntDesign} from '@expo/vector-icons'
 
 import * as Font from 'expo-font';
 let customFonts = {
-  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf')
+  'Louis': require('../../pages/fonts/Louis-George-Cafe.ttf'),
+  'Montserrat': require('../../pages/fonts/Montserrat-Black.otf'),
+  'Montserrat-Bold': require('../../pages/fonts/Montserrat-Bold.otf'),
+  'Montserrat-Medium': require('../../pages/fonts/Montserrat-Medium.otf'),
+  'Numberlin': require('../../pages/fonts/Numberlin.ttf'),
+  
 };
 
 export default class Fevereiro extends react.Component {
@@ -75,6 +80,7 @@ const style = StyleSheet.create ({
         flex: 1,
         backgroundColor: '#d4b4ed',
         alignItems: 'center',
+        justifyContent: 'center',
         zIndex: 20,
         
     },
@@ -93,21 +99,20 @@ const style = StyleSheet.create ({
         shadowColor: 'black'  
     },
     imgFEV: {
-        marginTop: 45,
+        marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
     },
     textTitleJAN: {
-        marginTop: 45, 
-        fontFamily: 'Louis', 
-        fontSize: 30,
+        fontFamily: 'Numberlin', 
+        fontSize: 70,
     },
     textBodyJan: {
-        marginTop: 45,
+        marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
         textAlign: 'justify',
-        fontFamily: 'Louis',
+        fontFamily: 'Montserrat-Medium',
         fontSize: 25,
     }
 })
