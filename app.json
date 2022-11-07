@@ -2,12 +2,12 @@
   "expo": {
     "name": "FicaTranquilo",
     "slug": "FicaTranquilo",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "/src/pages/img/ICON.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./src/assets/",
+      "image": "/src/pages/img/SPLASH-SCREEN.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "/src/pages/img/ICON.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "/src/pages/img/ICON.png"
     }
   }
 }

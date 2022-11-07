@@ -1,21 +1,18 @@
-import react from 'react';
-import {View, Text, StyleSheet, SafeAreaView, StatusBar} from 'react-native';
-import MesesModal from '../../component/MesesModal';
-export default function Meses () {
-
-    
-
-    return (
-        <SafeAreaView  style={style.container}>
-                <StatusBar backgroundColor={'#d0e4ae'}/>
-            <MesesModal/>
-        </SafeAreaView>
-    )
+import react from "react";
+import { View, Text, StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import MesesModal from "../../component/MesesModal";
+export default function Meses() {
+  return (
+    <SafeAreaView style={style.container}>
+      <StatusBar backgroundColor={"#62a6ed"} />
+      <MesesModal />
+    </SafeAreaView>
+  );
 }
 
-const style = StyleSheet.create ({
-    container: {
-        backgroundColor: '#d0e4ae',
-        flex: 1,
-    },
-})
+const style = StyleSheet.create({
+  container: {
+    backgroundColor: "#62a6ed",
+    flex: 1,
+  },
+});
